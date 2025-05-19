@@ -19,9 +19,9 @@ jobs:
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
 
-    - name: Deploy to EC2 and update /var/www/html/
+    - name: Deploy to EC2 and update /var/www/html/generrc
       run: |
         ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
-          sudo rm -rf /var/www/html/*
-          sudo git clone https://github.com/${{ github.repository }} /var/www/html/
+          sudo rm -rf /var/www/html/generrc
+          sudo git clone https://github.com/${{ github.repository }} /var/www/html/generrc
         EOF
