@@ -33,3 +33,9 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+nav ul {
+    border: 2px solid red;
+}
+nav ul li {
+    border: 1px solid blue;
+}
