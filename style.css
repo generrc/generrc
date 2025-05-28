@@ -1,6 +1,7 @@
 body{
     background-color: #c1c9c4;
     position: relative;
+    /*overflow: hidden;*/
 }
 .top-nav {
     position: fixed;
@@ -83,7 +84,6 @@ nav ul li a:hover::after {
     display: flex;
     margin-top: 50px;
     height: 100vh;
-    position: fixed;
 }
 
 .sidebar {
@@ -105,9 +105,9 @@ nav ul li a:hover::after {
 .main-content {
     margin-left: 30%;
     width: 70%;
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-    padding: 60px;
+    /*height: calc(100vh - 50px);*/
+    /*overflow-y: auto;*/
+    padding: 80px;
     box-sizing: border-box;
 }
 .main-content section {
