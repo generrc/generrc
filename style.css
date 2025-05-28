@@ -1,3 +1,7 @@
+body{
+    background-color: #c1c9c4;
+    position: relative;
+}
 .top-nav {
     position: fixed;
     top: 0;
@@ -40,7 +44,7 @@ nav ul li {
 
 .nav-link {
     padding: 8px 15px;
-    color: #2c3e50;
+    color: #f4f1f2;
     text-decoration: none;
     font-weight: 500;
     font-size: 0.95em;
@@ -48,7 +52,7 @@ nav ul li {
   }
 
 nav ul li a {
-    color: white; /* change to white if you use dark nav background */
+    color: #f4f1f2; /* change to white if you use dark nav background */
     text-decoration: none;
     font-weight: bold;
     position: relative;
@@ -61,15 +65,15 @@ nav ul li a::after{
     bottom: -5px;
     height: 2px;
     width: 0;
-    color: white; /* change to white if you use dark nav background */
+    color: #f4f2f2; /* change to white if you use dark nav background */
     text-decoration: none;
     font-weight: bold;
-    background-color: green;
+    background-color: #85954e;
     transition: width .35s ease;
     transform-origin: left;
 }
 nav ul li a:hover {
-    color: #00aa43;
+    color: #85954e;
 }
 nav ul li a:hover::after {
     width: 100%;
@@ -77,16 +81,20 @@ nav ul li a:hover::after {
 
 .content-wrapper {
     display: flex;
-    flex-direction: row;
     margin-top: 50px;
-    height: calc(100vh-50px);
+    height: 100vh;
+    position: fixed;
 }
 
 .sidebar {
     width: 30%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
     padding: 40px;
     text-align: center;
-    border: 2px solid red;
+    overflow: hidden;
+    box-sizing: border-box;
 }
   
 .sidebar img {
@@ -95,12 +103,13 @@ nav ul li a:hover::after {
 }
   
 .main-content {
+    margin-left: 30%;
     width: 70%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 50px);
     overflow-y: auto;
     padding: 60px;
-    border: 2px solid green;
-  }
+    box-sizing: border-box;
+}
 .main-content section {
     margin-bottom: 40px;
 }
@@ -108,4 +117,16 @@ nav ul li a:hover::after {
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
+}
+
+.section-box{
+    background-color: #b2bcb6;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transition .25s ease, box-shadow .25s ease;
+}
+
+.section-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
