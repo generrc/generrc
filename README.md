@@ -4,7 +4,7 @@ Hi 👋 My name is Alexander Johnston
 Software Development and Cybersecurity Graduate
 --------------------------------------------
 
-I am graduate of UNC Charlotte, where I achieved my B.S. and M.S. in Computer Science with a concentration in Information Security and Privacy. I love learning about network security, low level programming, machine learning, and creating projects revolving around these fields with my peers!
+I am a graduate of UNC Charlotte, where I achieved my B.S. and M.S. in Computer Science with a concentration in Information Security and Privacy. I love learning about network security, low level programming, machine learning, and creating projects revolving around these fields with my peers!
 
 *   🌍  I'm based in United States
 *   ✉️  You can contact me at [ajohnston.professional@gmail.com](mailto:ajohnston.professional@gmail.com)
